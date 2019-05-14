@@ -18,7 +18,7 @@ fileData <- "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+U
   
   # Load Data
   
-    train <- read.tabl("UCI HAR Dataset/train/X_train.txt")[featuresWanted]
+    train <- read.table("UCI HAR Dataset/train/X_train.txt")[featuresWanted]
     trainActivities <- read.table("UCI HAR Dataset/train/Y_train.txt")
     trainSubjects <- read.table("UCI HAR Dataset/train/subject_train.txt")
     train <- cbind(trainSubjects, trainActivities, train)
