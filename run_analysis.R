@@ -30,7 +30,7 @@ fileData <- "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+U
     
   # Merge Data
   CombineData <- rbind(train, test)
-  colnames(allData) <- c("subject", "activity", featuresWanted.names)
+  colnames(CombineData) <- c("subject", "activity", featuresWanted.names)
   
   # Change this info into factors
   CombineData$activity <- factor(CombineData$activity, levels = activityLabels[1], labels = activityLabels[2])
