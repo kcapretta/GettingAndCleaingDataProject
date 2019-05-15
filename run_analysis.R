@@ -37,6 +37,6 @@ fileData <- "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+U
   CombineData$subject <- as.factor(CombineData$subject)
   
   MeltData <- melt(CombineData, id = c("subject", activity"))
-  MeltDataMean <- dcast(MeltData, subject _ activity ~ variable, mean)
+  MeltDataMean <- dcast(MeltData, subject + activity ~ variable, mean)
   
   write.table(MeltDataMean, "tidy.txt", row.names = FALSE, quote = FALSE)
