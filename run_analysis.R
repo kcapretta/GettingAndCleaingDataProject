@@ -1,7 +1,7 @@
 fileData <- "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones"
 
   ## Download and unzip data
-  if (!file.exists){
+  if (!file.exists (filename)){
     DownloadURL <- "http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones"
     download.file(fileData, filename, method="curl")
   }
