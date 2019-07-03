@@ -1,14 +1,21 @@
-# fileData: The information regarding what was downloaded from online.
-# ActivityLabels: For the dataset activity labels.
-# ActivityLabels[2]: Into characters.
-# features: Reads features in table.
-# train: X_train features.
-# trainActivities: reads subject train text
-# test: Reads table.
-# testActivites: Reads test data for Y.
-# testSubjects: Reads test subject data.
-# CombineData: Combines row data for train and test.
-# CombineData$activity: Factors, levels, and labels combined.
-# CombineData$subject: Combining as factor.
-# MeltData: Melt data by subject and activity
-# MeltDataMean: Takes mean (and dcast) of subject and activity.
+## Getting and Cleaning Data Project
+
+Kassandra Capretta
+
+# Description
+
+All back-up information regarding Getting and Cleaning Data Project. Each section is broken up and described, as well as the variables; from John Hopkins Getting and Cleaning Data course.
+
+# Source Data
+
+Zip file: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Website: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+# Sections
+Merges the training and the test sets to create one data set.
+Extracts only the measurements on the mean and standard deviation for each measurement.
+Uses descriptive activity names to name the activities in the data set
+Appropriately labels the data set with descriptive variable names.
+From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
