@@ -11,4 +11,8 @@ datazip : Downloads zipfile and creates file path for data
 activityLabels : Reads file and creates columns for activities
 features : Reads file and creates columns for features
 featuresWanted : Organizes features
-measurements : 
+measurements : Organizes features / feature labels
+train : Reads table regarding train and sets names
+trainActivities : Creates column name for activities and pull data from table
+trainSubjects : 
+
