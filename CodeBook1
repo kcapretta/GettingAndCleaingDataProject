@@ -13,6 +13,10 @@ features : Reads file and creates columns for features
 featuresWanted : Organizes features
 measurements : Organizes features / feature labels
 train : Reads table regarding train and sets names
-trainActivities : Creates column name for activities and pull data from table
-trainSubjects : 
+trainActivities : Creates column name for activities and pulls data from table
+trainSubjects : Creates column name for activities and pulls data from table
+test : Organizes columns by test subjects and activities
+combined : Organizes train and test columns, melts data and produces requested formats of data: mean, average, etc.
+
+
 
